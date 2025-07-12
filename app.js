@@ -1,11 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000
+// app.js or app.ts
+const express = require("express");
+const app = express();
 
-app.get('/', (req, res) => {
-    res.send('We are under Development Mode!.............')
-})
+app.get("/", (req, res) => {
+    res.send("We are under Development Mode!.............");
+});
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+const server = app.listen(3000, () => {
+    console.log("Server is running on port 3000");
+});
+
+module.exports = { app, server };
