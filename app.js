@@ -1,7 +1,7 @@
 // app.js or app.ts
 const express = require("express");
 const app = express();
-const msg = "We are checking the our CI Pipeline is working or not!"
+const msg = "We are checking our CI Pipeline is working or not!"
 
 app.get("/", (req, res) => {
     res.send(msg);
